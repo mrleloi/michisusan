@@ -1,0 +1,87 @@
+.form-table {
+  border-collapse: collapse;
+  width: 100%;
+  text-indent: 0;
+  font-size: 1.1rem;
+}
+
+.form-table tr {
+  background-color: #eff3f8;
+}
+
+.form-table tr:nth-child(2n) {
+  background-color: #fff;
+}
+
+.form-table th,
+.form-table td {
+  border: 1px solid #bdbdbd;
+  padding: 22px 15px 22px 15px;
+}
+
+.form-table th {
+  font-weight: 600;
+  line-height: 24px;
+  font-family: 'Hiragino Kaku Gothic Pro';
+  width: 260px;
+  text-align: center;
+}
+
+.form-table tr.list-form th {
+  width: auto;
+  background: #6366f1;
+  color: white;
+  font-size: 1rem;
+  white-space: nowrap;
+}
+
+.form-table label.sp-only {
+  display: none;
+}
+
+@media screen and (max-width: 550px) {
+  .form-table {
+    display: block;
+    border-top: 1px solid #ddd;
+    border-left: 1px solid #ddd !important;
+    border-right: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+  }
+
+  .form-table tbody {
+    width: 100%;
+    display: block;
+  }
+
+  .form-table tr {
+    background-color: #eff3f8;
+    width: 100%;
+    display: block;
+  }
+
+  .form-table tr > :last-child {
+    border-bottom: none !important;
+  }
+
+  .form-table th,
+  .form-table td {
+    display: block;
+    border: none !important;
+    margin: 0;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: white;
+  }
+
+  .form-table th {
+    background-color: #eff3f8;
+  }
+
+  .form-table tr.list-form {
+    display: none;    
+  }
+
+  .form-table label.sp-only {
+    display: inline;
+  }
+}
